@@ -1,5 +1,6 @@
 function mostrar()
 {
+	
 	//tomo la edad  
 	let edad;
 
@@ -9,5 +10,7 @@ function mostrar()
 	if(edad == 15){
 		alert("niña bonita");
 	}
+	
+	
 
 }//FIN DE LA FUNCIÓN

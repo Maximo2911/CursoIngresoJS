@@ -7,15 +7,32 @@ function mostrar()
 	edad = parseInt(edad);
 
 	if(edad >= 18){
-		alert("No eres ADOLECENTE");
+		alert("Mayor");
 	}
 	else if(edad > 12 && edad < 18){
-		alert("Eres adolecente");
+		alert("Adolecente");
 	}
 	else{
-		alert("Eres menor");
+		alert("Menor");
 	}
 
+
+	//! Forma más efectiva, solamente 2 preguntas
+	/*
+		if(edad >17){
+			mensaje = "La persona es mayor";
+		}
+		else{
+			if(edad < 13){
+				mensaje = "La persona es un niño";
+			}
+			else{
+				mensaje = "La persona es adolecente";
+			}
+		}
+
+		alert(mensaje);
+	*/
 
 
 }//FIN DE LA FUNCIÓN

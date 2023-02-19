@@ -1,13 +1,22 @@
 function mostrar()
 {
-	var contador;
 	var acumulador;
+	var rondas;
 	var numeroIngresado;
+	var promedio;
 
-	contador=0;
 	acumulador=0;
+	rondas=0;
 	
-	
-	txtIdSuma.value=acumulador;
-	txtIdPromedio.value=acumulador/5;
+	while(rondas<4){
+		numeroIngresado=prompt("Ingrese algun numero");
+		numeroIngresado= parseInt(numeroIngresado);
+		acumulador += numeroIngresado + acumulador;
+		rondas++;
+	}
+	document.getElementById("txtIdSuma").value=acumulador;
+
+	promedio= acumulador/5;
+	document.getElementById("txtIdPromedio").value=promedio;
+
 }//FIN DE LA FUNCIÓN
